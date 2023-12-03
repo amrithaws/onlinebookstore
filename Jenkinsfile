@@ -10,7 +10,7 @@ pipeline{
         stage("Maven Build"){
             steps{
                 sh "mvn clean package"
-                sh "mv target/*.war target/onlinebookstore.war"
+                sh "mv target/*.war target/Onlinebookstore.war"
             }
         }
         stage("deploy-dev"){
